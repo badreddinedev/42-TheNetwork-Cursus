@@ -10,78 +10,78 @@ The main goal of this repository is to share the source code for all projects re
 
 The repository is organized into individual project directories. Each directory corresponds to a specific project within the 42 Cursus. Here's an overview of the structure:
 ```
-42TheNetwork-Cursus/<br>
-    ├──Born2beroot-42/<br>
-    │   ├── README.md<br>
-    │   ├── evaluation.txt<br>
-    │   ├── script.sh<br>
-    ├──Cub3d-42/<br>
-    │   ├── includes<br>
-    │   ├── Mandatory<br>
-    │   ├── maps<br>
-    │   ├── Textures<br>
-    │   ├── Utils<br>
-    │   ├── cub3d.c<br>
-    │   ├── Makefile<br>
-    ├──EXAM-42/<br>
-    │   ├── 42ExamRank-02<br>
-    │   ├── 42ExamRank-03<br>
-    ├──GetNextLine42/<br>
-    │   ├──get_next_line_bonus.c<br>
-    │   ├──get_next_line_bonus.h<br>
-    │   ├──get_next_line_utils_bonus.c<br>
-    │   ├──get_next_line_utils.c<br>
-    │   ├──get_next_line.c<br>
-    │   ├──get_next_line.h<br>
-    ├──Libft-42/<br>
-    │   ├── All Function<br>
-    │   ├── libft.h<br>
-    │   ├── Makefile<br>
-    │   ├── README.md<br>
-    ├──Minishell-42/<br>
-    │   ├── include<br>
-    │   ├── libft<br>
-    │   ├── src<br>
-    │   ├── Makefile<br>
-    ├──Minitalk-42/<br>
-    │   ├── ft_printf<br>
-    │   ├── client.c<br>
-    │   ├── Makefile<br>
-    │   ├── Minitalk.h<br>
-    │   ├── server.c<br>
-    ├──Philosophers-42/<br>
-    │   ├── img<br>
-    │   ├── philo<br>
-    │   ├── philo_bonus<br>
-    │   ├── README.md<br>
-    ├──PushSwap-42/<br>
-    │   ├── Algorithm<br>
-    │   ├── Bonus<br>
-    │   ├── ft_printf<br>
-    │   ├── Rules<br>
-    │   ├── Utils<br>
-    │   ├── checker_linux<br>
-    │   ├── checker_Mac<br>
-    │   ├── Makefile<br>
-    │   ├── push_swap.c<br>
-    │   ├── push_swap.h<br>
-    ├──PushSwap-42/<br>
-    │   ├── check_map<br>
-    │   ├── draw_map<br>
-    │   ├── ft_printf<br>
-    │   ├── get_next_line<br>
-    │   ├── maps<br>
-    │   ├── move<br>
-    │   ├── utils<br>
-    │   ├── xpm<br>
-    │   ├── Makefile<br>
-    │   ├── so_long.c<br>
-    │   ├── so_long.h<br>
-    ├──ftPrintf-42/<br>
-    │   ├── Utils<br>
-    │   ├── ft_printf.c<br>
-    │   ├── ft_printf.h<br>
-    │   ├── Makefile<br>
+├──42TheNetwork-Cursus/
+    ├──Born2beroot-42/
+    │   ├── README.md
+    │   ├── evaluation.txt
+    │   ├── script.sh
+    ├──Cub3d-42/
+    │   ├── includes
+    │   ├── Mandatory
+    │   ├── maps
+    │   ├── Textures
+    │   ├── Utils
+    │   ├── cub3d.c
+    │   ├── Makefile
+    ├──EXAM-42/
+    │   ├── 42ExamRank-02
+    │   ├── 42ExamRank-03
+    ├──GetNextLine42/
+    │   ├──get_next_line_bonus.c
+    │   ├──get_next_line_bonus.h
+    │   ├──get_next_line_utils_bonus.c
+    │   ├──get_next_line_utils.c
+    │   ├──get_next_line.c
+    │   ├──get_next_line.h
+    ├──Libft-42/
+    │   ├── All Function
+    │   ├── libft.h
+    │   ├── Makefile
+    │   ├── README.md
+    ├──Minishell-42/
+    │   ├── include
+    │   ├── libft
+    │   ├── src
+    │   ├── Makefile
+    ├──Minitalk-42/
+    │   ├── ft_printf
+    │   ├── client.c
+    │   ├── Makefile
+    │   ├── Minitalk.h
+    │   ├── server.c
+    ├──Philosophers-42/
+    │   ├── img
+    │   ├── philo
+    │   ├── philo_bonus
+    │   ├── README.md
+    ├──PushSwap-42/
+    │   ├── Algorithm
+    │   ├── Bonus
+    │   ├── ft_printf
+    │   ├── Rules
+    │   ├── Utils
+    │   ├── checker_linux
+    │   ├── checker_Mac
+    │   ├── Makefile
+    │   ├── push_swap.c
+    │   ├── push_swap.h
+    ├──PushSwap-42/
+    │   ├── check_map
+    │   ├── draw_map
+    │   ├── ft_printf
+    │   ├── get_next_line
+    │   ├── maps
+    │   ├── move
+    │   ├── utils
+    │   ├── xpm
+    │   ├── Makefile
+    │   ├── so_long.c
+    │   ├── so_long.h
+    ├──ftPrintf-42/
+    │   ├── Utils
+    │   ├── ft_printf.c
+    │   ├── ft_printf.h
+    │   ├── Makefile
 ```
 - The source code files for each project are contained within their respective directories.
 
