@@ -99,7 +99,7 @@ To use the resources in this repository, follow these steps:
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/42TheNetwork-Cursus.git
+   git clone https://github.com/badreddinems/42TheNetwork-Cursus.git
 
 ## Contributing
 Contributions are welcome! If you'd like to contribute to this repository, please follow these steps:
