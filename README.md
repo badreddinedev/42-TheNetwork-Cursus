@@ -2,6 +2,14 @@
 
 Welcome to the **42TheNetwork-Cursus** repository! This repository is dedicated to providing resources for the 42 Network's curriculum, including the source code for various projects.
 
+## Table of Contents
+- [Project Title](#42TheNetwork)
+- [Table of Contents](#table-of-contents)
+- [Purpose](#purpose)
+- [Repository Structure](#repository-structure)
+- [Usage](usage)
+- [Contributing](#contributing)
+
 ## Purpose
 
 The main goal of this repository is to share the source code for all projects related to the 42 Cursus. This can serve as a reference for students and help them understand and complete their projects.
