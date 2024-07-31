@@ -1,0 +1,87 @@
+##################################
+     Part one: Evaluation Q&A
+##################################
+
+Q: Why choose Debian?
+A: Debian is preferred due to its easier installation and configuration compared to CentOS, and I have not used CentOS before.
+
+Q: What is a virtual machine?
+A: A Virtual Machine (VM) is a compute resource that utilizes software instead of a physical computer to run programs and deploy apps. Each VM operates with its own operating system, functioning independently from other VMs, even when they run on the same host. For instance, you can run a virtual MacOS machine on a physical PC.
+
+Q: What is its purpose?
+A: VMs are deployed for various reasons, such as meeting different processing power needs, running software requiring a different operating system, or testing applications in a secure, sandboxed environment.
+
+Q: How does it work?
+A: VMs work through "Virtualization" technology, which employs software to simulate virtual hardware, allowing multiple VMs to run on a single host machine.
+
+Q: What is the difference between aptitude and apt?
+A: Aptitude is a high-level package manager, whereas APT is a lower-level package manager that can be used by other higher-level package managers. (read more: https://www.tecmint.com/difference-between-apt-and-aptitude/)
+
+Q: What is AppArmor?
+A: AppArmor ("Application Armor") is a Linux kernel security module that enables the system administrator to restrict programs' capabilities using per-program profiles. (read more: https://en.wikipedia.org/wiki/AppArmor)
+
+Q: What is SSH?
+A: SSH, also known as Secure Shell or Secure Socket Shell, is a network protocol that provides users, particularly system administrators, with a secure way to access a computer over an unsecured network. (read more: https://searchsecurity.techtarget.com/definition/Secure-Shell)
+
+////////////////////////////////////////////////////////////////////////////////////////////
+| To create a new user, follow these steps:|
+| $ sudo adduser username | <- Replace 'username' with the desired username
+| $ sudo chage -l username | <- Verify password expiration info for the new user
+| $ sudo adduser username sudo | <- Add the new user to the sudo group
+| $ sudo adduser username user42 | <- Assign the new user to both the sudo and user42 groups
+////////////////////////////////////////////////////////////////////////////////////////////
+
+Q: How does your script work?
+A: ... README.md
+
+##################################
+     Part two: What to check?
+##################################
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+| 1) lsblk 1 <- Check partitions
+| 2) sudo aa-status 2 <- AppArmor status
+| 3) getent group sudo 3 <- sudo group users
+| 4) getent group user42 4 <- user42 group users
+| 5) sudo service ssh status 5 <- SSH status
+| 6) sudo ufw status 6 <- UFW status
+| 7) ssh username@ipadress -p 4242 7 <- Connect to VM from your host (physical) machine via SSH
+| 8) nano /etc/sudoers.d/<filename> 8 <- Edit sudo configuration file (<filename> can be found using: $ ls /etc/sudoers.d)
+| 9) nano /etc/login.defs 9 <- Password expiration policy
+| 10) nano /etc/pam.d/common-password 10 <- Password policy
+| 11) sudo crontab -l 11 <- Cron schedule
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+For the additions:
+
+How to change hostname?
+[$sudo nano /etc/hostname]
+
+Where is sudo logs in /var/log/sudo?
+[$cd /var/log/sudo/00/00 && ls]
+You will see a lot of directories with names like 01 2B 9S 4D etc. They contain the logs we need.
+[$ sudo apt update]
+[$ ls]
+Now you see that we have a new directory here.
+[$ cd <nameofnewdirectory> && ls]
+[$ cat log] <- Input log
+[$ cat ttyout] <- Output log
+
+How to add and remove port 8080 in UFW?
+[$ sudo ufw allow 8080] <- allow
+[$ sudo ufw status] <- check
+[$ sudo ufw deny 8080] <- deny (yes yes)
+
+How to run script every 30 seconds?
+[$ sudo crontab -e]
+
+Remove or commit previous cron "schedule" and add next lines in crontab file
+|*************************************************|
+| */1 * * * * /path/to/monitoring.sh              |
+| */1 * * * * sleep 30s && /path/to/monitoring.sh |
+|*************************************************|
+To stop script running on boot you just need to remove or commit
+|********************************|
+| @reboot /path/to/monitoring.sh |
+|********************************|
+line in crontab file.
