@@ -90,7 +90,7 @@ The repository is organized into individual project directories. Each directory 
     │   ├── ft_printf.c
     │   ├── ft_printf.h
     │   ├── Makefile
-───────────
+────├───├
 ```
 - The source code files for each project are contained within their respective directories.
 
