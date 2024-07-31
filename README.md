@@ -104,7 +104,7 @@ To use the resources in this repository, follow these steps:
 ## Contributing
 Contributions are welcome! If you'd like to contribute to this repository, please follow these steps:
 
-Fork the repository.
-Create a new branch for your changes.
-Commit your changes and push the branch to your fork.
-Open a pull request with a description of your changes.
+Fork the repository.<br>
+Create a new branch for your changes.<br>
+Commit your changes and push the branch to your fork.<br>
+Open a pull request with a description of your changes.<br>
