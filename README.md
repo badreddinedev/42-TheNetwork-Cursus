@@ -7,7 +7,7 @@ Welcome to the **42TheNetwork-Cursus** repository! This repository is dedicated 
 - [Table of Contents](#table-of-contents)
 - [Purpose](#purpose)
 - [Repository Structure](#repository-structure)
-- [Usage](usage)
+- [Usage](#usage)
 - [Contributing](#contributing)
 
 ## Purpose
